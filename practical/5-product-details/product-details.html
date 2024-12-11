@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Details</title>
+        <link rel="stylesheet" href="/5-product-details/product-details.css">
+        <script src="/5-product-details/product-details.js" defer></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">MyStore</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Product Details Section -->
+        <section class="product-details">
+            <div class="product-image">
+                <img src="/img/hody-1.jpg" alt="Product Name" id="mainImage">
+                <div class="thumbnails">
+                    <img src="/img/hody-5.jpg" alt="Thumbnail 1" onclick="changeImage('/img/hody-5.jpg')">
+                    <img src="/img/hody-2.jpg" alt="Thumbnail 2" onclick="changeImage('/img/hody-2.jpg')">
+                    <img src="/img/hody-3.jpg" alt="Thumbnail 3" onclick="changeImage('/img/hody-3.jpg')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>Product Name</h1>
+                <p class="price">$25.00</p>
+                <p class="description">This is a detailed description of the product. It highlights the features, benefits, and specifications of the product.</p>
+                
+                <label for="color">Color:</label>
+                <select id="color" onchange="updateSelection('Color', this.value)">
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                </select>
+
+                <label for="size">Size:</label>
+                <select id="size" onchange="updateSelection('Size', this.value)">
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 MyStore. All Rights Reserved.</p>
+        </footer>
+
+    </body>
+</html>

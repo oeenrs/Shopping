@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+        <link rel="stylesheet" href="/3-Profile/Profile.css">
+        <script src="/3-Profile/Profile.js" defer></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">MyStore</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Profile Section -->
+        <section class="profile-page">
+            <div class="phone-section">
+                <img src="/img/images (1).jpeg" alt="Phone Illustration">
+            </div>
+            <div class="profile-content">
+                <h1>Your Profile</h1>
+                <div class="profile-image">
+                    <img src="/img/images.jpeg" alt="Profile Picture">
+                    <button onclick="changeProfilePicture()">Change Picture</button>
+                </div>
+                <form id="profileForm" onsubmit="return saveProfile()">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" value="Omar Ayman" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="omar@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" value="+1284744853" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3">213 street, 10th of ramadan</textarea>
+                    </div>
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>© 2024 MyStore. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>

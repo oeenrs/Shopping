@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart - MyWebsite</title>
+        <link rel="stylesheet" href="/9-cart/Cart.css">
+        <script defer src="/9-cart/Cart.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">MyWebsite</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Cart Section -->
+        <main class="cart-container">
+            <h1>Your Cart</h1>
+            <div class="cart">
+
+                <div class="cart-item">
+                    <img src="/img/hody-2.jpg" alt="Product 1">
+                    <div class="item-details">
+                        <h3>Product 1</h3>
+                        <p>Price: $50</p>
+                        <div class="quantity">
+                            <button class="decrease">-</button>
+                            <input type="number" value="0" min="0" class="item-quantity">
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">Remove</button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="/img/hody-1.jpg" alt="Product 2">
+                    <div class="item-details">
+                        <h3>Product 2</h3>
+                        <p>Price: $30</p>
+                        <div class="quantity">
+                            <button class="decrease">-</button>
+                            <input type="number" value="0" min="0" class="item-quantity">
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">Remove</button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="/img/hody-5.jpg" alt="Product 3">
+                    <div class="item-details">
+                        <h3>Product 3</h3>
+                        <p>Price: $35</p>
+                        <div class="quantity">
+                            <button class="decrease">-</button>
+                            <input type="number" value="0" min="0" class="item-quantity">
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h2>Summary</h2>
+                <p>Total Items: <span id="total-items">2</span></p>
+                <p>Total Price: $<span id="total-price">80</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 MyWebsite. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
