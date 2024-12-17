@@ -45,18 +45,6 @@
     min-height: 80vh;
 }
 
-.phone-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.phone-section img {
-    max-width: 300px;
-    width: 100%;
-}
-
 .profile-content {
     flex: 2;
     background-color: #fff;
